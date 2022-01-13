@@ -11,9 +11,6 @@ systemctl stop sddm.service
 echo 0 > /sys/class/vtconsole/vtcon0/bind
 echo 0 > /sys/class/vtconsole/vtcon1/bind
 
-# Unbind EFI-Framebuffer
-#echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
-
 
 sleep 3
 
