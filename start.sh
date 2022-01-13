@@ -4,7 +4,7 @@ set -x
 # load variables we defined
 source "/etc/libvirt/hooks/kvm.conf"
 
-# Stop display manager
+# Kill SDDM
 systemctl stop sddm.service
 
 # Unbind VTConsoles
