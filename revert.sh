@@ -2,10 +2,6 @@
 #!/bin/bash
 set -x
   
-# Re-Bind GPU to Nvidia Driver
-#virsh nodedev-reattach pci_0000_0b_00_0
-#virsh nodedev-reattach pci_0000_0c_00_0
-
 # Rebind VT consoles
 echo 1 > /sys/class/vtconsole/vtcon0/bind
 echo 1 > /sys/class/vtconsole/vtcon1/bind
