@@ -25,4 +25,6 @@ modprobe  drm
 modprobe  snd_hda_intel
 echo "efi-framebuffer.0" > /sys/bus/platform/drivers/efi-framebuffer/bind
 
+
+#Restart SDDM
 systemctl start sddm.service
