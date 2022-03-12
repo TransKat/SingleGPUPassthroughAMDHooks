@@ -3,8 +3,8 @@
 set -x
   
 # Rebind VT consoles
-echo 1 > /sys/class/vtconsole/vtcon0/bind
-echo 1 > /sys/class/vtconsole/vtcon1/bind
+echo 0 > /sys/class/vtconsole/vtcon0/bind
+echo 0 > /sys/class/vtconsole/vtcon1/bind
  
 # Unload all the vfio modules
 modprobe -r vfio_pci
